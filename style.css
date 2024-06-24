@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#game {
+    margin: 50px auto;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#resources, #mine, #upgrades, #locations {
+    margin-bottom: 20px;
+}
