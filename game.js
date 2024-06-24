@@ -57,14 +57,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateLocationList() {
         locationList.innerHTML = '';
-        mineLocations.forEach(location => {
+        mineLocations.forEach((location, index) => {
             const locationButton = document.createElement('button');
             locationButton.textContent = `${location.name} (Cost: ${location.cost} Gold)`;
             locationButton.disabled = location.unlocked;
             locationButton.addEventListener('click', function() {
                 if (gameData.gold >= location.cost && !location.unlocked) {
                     gameData.gold -= location.cost;
-                    location.unlocked = true;
+                    mineLocations[index].unlocked = true;
                     gameData.currentResource = location.resource;
                     updateDisplay();
                     saveGameData();
