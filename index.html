@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Mine Manager Tycoon</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Idle Mine Manager Tycoon</h1>
+        <div id="resources">
+            <p id="gold">Gold: 0</p>
+            <p id="silver">Silver: 0</p>
+            <p id="copper">Copper: 0</p>
+            <p id="iron">Iron: 0</p>
+            <p id="coal">Coal: 0</p>
+            <p id="diamond">Diamond: 0</p>
+            <p id="emerald">Emerald: 0</p>
+            <p id="ruby">Ruby: 0</p>
+            <p id="sapphire">Sapphire: 0</p>
+            <p id="platinum">Platinum: 0</p>
+        </div>
+        <div id="mine">
+            <h2>Mine</h2>
+            <button id="mineButton">Mine Resources</button>
+        </div>
+        <div id="upgrades">
+            <h2>Upgrades</h2>
+            <button id="upgradeButton">Upgrade Mine (Cost: <span id="upgradeCost">10</span> Gold)</button>
+        </div>
+        <div id="locations">
+            <h2>Mine Locations</h2>
+            <div id="locationList"></div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
